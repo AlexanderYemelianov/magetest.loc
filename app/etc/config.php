@@ -123,6 +123,7 @@ return array (
     'Shopial_Facebook' => 1,
     'Tasks_First' => 1,
     'Tasks_Second' => 1,
+    'Tasks_Third' => 1,
     'Temando_Shipping' => 1,
     'Unit1_Plugins' => 1,
     'Unit1_Test' => 1,
