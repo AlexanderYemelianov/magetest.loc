@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="div.sidebar.main">
+            <container htmlTag="p" htmlId="customSidebarMain" name="customSidebarMain">
+                <block class="Tasks\Second\Block\Display" name="helloworld_display1" template="Tasks_Second::sayhello.phtml" >
+                    <arguments>
+                        <argument name="col_name" xsi:type='string'>Col 1</argument>
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <container htmlTag="div" htmlId="colWrapper" name="colWrapper">
+                <container htmlTag="div" htmlId="col2" name="col2">
+                    <block class="Tasks\Second\Block\Display" name="helloworld_display2" template="Tasks_Second::sayhello.phtml" >
+                        <arguments>
+                            <argument name="col_name" xsi:type='string'>Col 2</argument>
+                        </arguments>
+                    </block>
+                </container>
+                <container htmlTag="div" htmlId="col3" before="col2" name="col3">
+                    <block class="Tasks\Second\Block\Display" name="helloworld_display3" template="Tasks_Second::sayhello.phtml" >
+                        <arguments>
+                            <argument name="col_name" xsi:type='string'>Col 3</argument>
+                        </arguments>
+                    </block>
+                </container>
+            </container>
+        </referenceContainer>
+    </body>
+</page>

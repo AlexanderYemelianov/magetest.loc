@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="write_html_to_log_before_respond">
+        <observer name="unit2_loghtml" instance="Unit2\LogHtml\Observer\LogHtml" shared="false"/>
+    </event>
+</config>
