@@ -2,7 +2,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="standard">
-        <route id="custom_product_page" frontName="custom_product_page">
+        <route id="customProductAttr" frontName="customProductAttr">
             <module name="Tasks_Third"/>
         </route>
     </router>
