@@ -3,6 +3,7 @@ return array (
   'modules' => 
   array (
     'Magento_Store' => 1,
+    'First_Crud' => 1,
     'First_Hello' => 1,
     'Magento_Directory' => 1,
     'Magento_Backend' => 1,
