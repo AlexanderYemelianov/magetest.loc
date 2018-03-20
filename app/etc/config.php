@@ -125,6 +125,7 @@ return array (
     'Tasks_Second' => 1,
     'Tasks_Second2' => 1,
     'Tasks_Third' => 1,
+    'Tasks_Third2' => 1,
     'Temando_Shipping' => 1,
     'Unit1_Plugins' => 1,
     'Unit1_Test' => 1,

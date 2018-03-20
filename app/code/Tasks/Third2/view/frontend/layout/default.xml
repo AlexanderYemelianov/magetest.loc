@@ -1,11 +1,9 @@
 <?xml version="1.0"?>
 
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-
     <body>
-        <referenceContainer display="true" name="div.sidebar.main">
-            <block class="Tasks\Second2\Block\Display" name="hello_world_test" template="Tasks_Second2::product/compare/sidebar.phtml" />
+        <referenceContainer name="div.sidebar.additional">
+            <block class="Tasks\Third2\Block\CustomAttribute" name="custom_attribute" template="Tasks_Third2::product/compare/sidebar.phtml" before="catalog.compare.sidebar" />
         </referenceContainer>
     </body>
-
 </page>
