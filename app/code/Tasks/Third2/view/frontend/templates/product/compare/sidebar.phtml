@@ -1,0 +1,17 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+/* @var $block \Magento\Framework\View\Element\Template */
+?>
+<div class="block block-compare test-class" data-bind="scope: 'compareProducts'" data-role="compare-products-sidebar">
+    <div>
+        <b><?=$block->getCustomAttributeLabel();?> : </b>
+    </div>
+    <div>
+        <?=$block->getCustomAttribute();?>
+    </div>
+</div>
