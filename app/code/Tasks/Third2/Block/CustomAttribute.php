@@ -54,9 +54,9 @@ class CustomAttribute extends \Magento\Framework\View\Element\Template
      */
     public function getCustomAttribute()
     {
-        $attr = $this->_product->getResource()->getAttribute($this->_attrName)->getFrontend()->getValue($this->_product);
-
-        return $attr ?? __('Custom attribute not assigned.');
+//        $attr = $this->_product->getResource()->getAttribute($this->_attrName)->getFrontend()->getValue($this->_product);
+//
+//        return $attr ?? __('Custom attribute not assigned.');
     }
 
     /**
@@ -66,9 +66,9 @@ class CustomAttribute extends \Magento\Framework\View\Element\Template
      */
     public function getCustomAttributeLabel()
     {
-        $label = $address =$this->_product->getResource()->getAttribute($this->_attrName)->getStoreLabel();
+        /*$label = $this->_product->getResource()->getAttribute($this->_attrName)->getStoreLabel();
 
-        return $label;
+        return $label;*/
     }
 
     /**

@@ -1,0 +1,27 @@
+{
+	"name" : "base/view",
+	"description" : "Testing base functionality of Magento 2 frontend part",
+	"type" : "magento2-module",
+	"version" : "0.1.0",
+	"license" : [
+		"MIT"
+	],
+	"require" : {
+		"php" : "~5.5.0|~5.6.0|~7.0.0",
+		"ext-curl" : "*"
+	},
+	"authors" : [{
+			"name" : "Alex",
+			"email" : "alex@aidalab.com",
+			"role" : "Admin"
+		}
+	],
+	"autoload" : {
+		"files" : [
+			"registration.php"
+		],
+		"psr-4" : {
+			"Base\\View\\" : ""
+		}
+	}
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="base_view_display_text">
+        <observer name="bv_display_text" instance="Base\View\Observer\ChangeDisplayText" shared="false"/>
+    </event>
+</config>

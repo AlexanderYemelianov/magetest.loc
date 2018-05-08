@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Base_View::helloworld" title="Hello World" module="Base_View" sortOrder="51" resource="Base_View::helloworld"/>
+        <add id="Base_View::post" title="Manage Posts" module="Base_View" sortOrder="10" action="base_view/post" resource="Base_View::post" parent="Base_View::helloworld"/>
+        <add id="Base_View::hello_configuration" title="Configuration" module="Base_View" sortOrder="99" parent="Base_View::helloworld" action="adminhtml/system_config/edit/section/helloworld" resource="Mageplaza_HelloWorld::helloworld_configuration"/>
+    </menu>
+</config>

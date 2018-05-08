@@ -18,6 +18,6 @@ class Display extends \Magento\Framework\View\Element\Template
 
     public function sayHello()
     {
-        return __('Hello world');
+        return __('Hello world from' . __CLASS__);
     }
 }

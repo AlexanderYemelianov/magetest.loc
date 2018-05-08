@@ -2,6 +2,7 @@
 return array (
   'modules' => 
   array (
+    'Base_View' => 1,
     'Magento_Store' => 1,
     'First_Hello' => 1,
     'Magento_Directory' => 1,
@@ -120,6 +121,8 @@ return array (
     'Magento_Wishlist' => 1,
     'Dotdigitalgroup_Email' => 1,
     'Magento_WishlistAnalytics' => 1,
+    'Mageplaza_HelloWorld' => 1,
+    'Narvar_ConnectEE' => 1,
     'Shopial_Facebook' => 1,
     'Tasks_First' => 1,
     'Tasks_Second' => 1,
