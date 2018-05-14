@@ -123,6 +123,8 @@ return array (
     'Magento_WishlistAnalytics' => 1,
     'Mageplaza_HelloWorld' => 1,
     'Narvar_ConnectEE' => 1,
+    'Payment_Custom' => 0,
+    'Shipping_Custom' => 1,
     'Shopial_Facebook' => 1,
     'Tasks_First' => 1,
     'Tasks_Second' => 1,

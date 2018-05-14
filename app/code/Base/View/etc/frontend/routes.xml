@@ -5,5 +5,8 @@
         <route id="front" frontName="front">
             <module name="Base_View"/>
         </route>
+        <route id="controllerrewrite" frontName="controllerrewrite">
+            <module name="Base_View" before="Magento_Customer" />
+        </route>
     </router>
 </config>

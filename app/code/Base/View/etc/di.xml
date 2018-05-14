@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!--Admin page customization for custom DB table data represenatation-->
     <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
         <arguments>
             <argument name="collections" xsi:type="array">
@@ -14,6 +15,7 @@
             <argument name="resourceModel" xsi:type="string">Base\View\Model\ResourceModel\Post</argument>
         </arguments>
     </virtualType>
+    <!--Extending console commands-->
     <type name="Magento\Framework\Console\CommandList">
         <arguments>
             <argument name="commands" xsi:type="array">
@@ -21,4 +23,12 @@
             </argument>
         </arguments>
     </type>
+    <!--API interface class preference-->
+    <preference for="Base\View\Api\PostManagementInterface" type="Base\View\Model\PostManagement"/>
+    <!--Plugins-->
+    <type name="Magento\Catalog\Block\Product\View">
+        <plugin name="Base-view-product-block" type="Base\View\Plugin\ProductPlugin" sortOrder="5" />
+    </type>
+    <!--Preferences-->
+    <preference for="Magento\Catalog\Block\Product\View" type="Base\View\Block\Catalog\Product\View" />
 </config>
